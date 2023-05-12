@@ -249,7 +249,7 @@
               <name>1683885713486</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">6</rawValue>
+            <rawValue class="string">0.6</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -260,7 +260,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">444</rawValue>
+            <rawValue class="string">120120000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
