@@ -34,7 +34,7 @@ $R.setIncen($D);
 System.out.println("Assistance Lead Owner Incentive: "+$D);
 end
 
-rule "CalculateIncentiveAssistanceLeadOwner1"
+rule "CalculateIncentiveAssistanceLeadOwner2"
 //ruleflow-group "Test"
 salience 3
 when
