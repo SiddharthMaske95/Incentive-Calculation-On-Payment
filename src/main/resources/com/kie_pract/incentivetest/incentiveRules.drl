@@ -9,7 +9,7 @@ salience 3
 when
 //$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
 
-$R:IncentiveTest( $D:incen ,$Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments") ,$H.equals("Yes"),$D:(payment*value) )
+$R:IncentiveTest( $D:incen  )
 the
 $R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
