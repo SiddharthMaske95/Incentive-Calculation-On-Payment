@@ -141,7 +141,7 @@
             <name>1|2</name>
             <className>com.kie_pract.incentivetest.IncentiveTest</className>
           </factIdentifier>
-          <className>float</className>
+          <className>int</className>
           <factAlias>IncentiveTest</factAlias>
           <expressionAlias>value</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
@@ -153,7 +153,7 @@
               <step>IncentiveTest</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>incen</step>
+              <step>results</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -164,9 +164,9 @@
             <name>1|2</name>
             <className>com.kie_pract.incentivetest.IncentiveTest</className>
           </factIdentifier>
-          <className>double</className>
+          <className>java.lang.String</className>
           <factAlias>IncentiveTest</factAlias>
-          <expressionAlias>incen</expressionAlias>
+          <expressionAlias>results</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>132.5</columnWidth>
         </FactMapping>
@@ -224,17 +224,6 @@
               <className>com.kie_pract.incentivetest.IncentiveTest</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1683885713486</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">6.5</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.kie_pract.incentivetest.IncentiveTest</className>
-            </factIdentifier>
-            <expressionIdentifier>
               <name>1683886018128</name>
               <type>GIVEN</type>
             </expressionIdentifier>
@@ -257,10 +246,21 @@
               <className>com.kie_pract.incentivetest.IncentiveTest</className>
             </factIdentifier>
             <expressionIdentifier>
+              <name>1683885713486</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">6</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|2</name>
+              <className>com.kie_pract.incentivetest.IncentiveTest</className>
+            </factIdentifier>
+            <expressionIdentifier>
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">1.3013E8d</rawValue>
+            <rawValue class="string">444</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
