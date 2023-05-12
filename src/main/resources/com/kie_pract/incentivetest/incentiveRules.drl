@@ -21,7 +21,7 @@ salience 3
 when
 $R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC")   ,$H.equals("Yes"),$D:(CTC*value)  )
 then
-$R.setIncen($D);
+//$R.setIncen($D);
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
