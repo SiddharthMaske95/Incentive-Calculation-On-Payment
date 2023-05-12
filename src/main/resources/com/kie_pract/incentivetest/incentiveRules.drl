@@ -7,7 +7,9 @@ rule "CalculateIncentiveLeadOwner1"
 //ruleflow-group "Test"
 salience 3
 when
-$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
+//$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
+
+$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*value)
 then
 $R.setIncen($D);
 System.out.println("Lead Owner Incentive: "+$D);
@@ -17,7 +19,7 @@ rule "CalculateIncentiveLeadOwner2"
 //ruleflow-group "Test"
 salience 3
 when
-$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC")   ,$H.equals("Yes"),$D:(payment*(value/100)))
+$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC")   ,$H.equals("Yes"),$D:(CTC*value)
 then
 $R.setIncen($D);
 System.out.println("Lead Owner Incentive: "+$D);
