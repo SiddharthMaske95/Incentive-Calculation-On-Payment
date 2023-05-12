@@ -205,7 +205,7 @@
               <name>1683885707132</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">Multiple of Payment</rawValue>
+            <rawValue class="string">Multiple Of Payments</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -260,7 +260,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">0.0d</rawValue>
+            <rawValue class="string">1.3013E8d</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
