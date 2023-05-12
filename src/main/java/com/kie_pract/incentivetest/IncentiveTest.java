@@ -8,7 +8,7 @@ public class IncentiveTest implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private float incen;
+	private int incen;
 	private java.lang.String incentTypes;
 	private java.lang.String incentiveEligible;
 	private int payment;
@@ -80,15 +80,15 @@ public class IncentiveTest implements java.io.Serializable {
 		this.CTC = CTC;
 	}
 
-	public float getIncen() {
+	public int getIncen() {
 		return this.incen;
 	}
 
-	public void setIncen(float incen) {
+	public void setIncen(int incen) {
 		this.incen = incen;
 	}
 
-	public IncentiveTest(float incen, java.lang.String incentTypes,
+	public IncentiveTest(int incen, java.lang.String incentTypes,
 			java.lang.String incentiveEligible, int payment,
 			java.lang.String type_of, float value, java.lang.String based_on,
 			int CTC) {
