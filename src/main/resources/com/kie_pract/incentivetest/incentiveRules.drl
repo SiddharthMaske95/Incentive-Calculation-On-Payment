@@ -10,7 +10,7 @@ when
 //$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
 
 $R:IncentiveTest( $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments") ,$H.equals("Yes"),$D:(payment*value)  )
-the
+then
 $R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
 end
