@@ -17,19 +17,23 @@ end
 
 
 
-/*
+
 rule "CalculateIncentiveLeadOwner2"
 ruleflow-group "Test"
 salience 3
 when
-$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC")   ,$H.equals("Yes"),incen:(CTC*value)  )
+$R:IncentiveTest( $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC") , based_on.equals("No. of Accounts")  ,$H.equals("Yes"),$D:(CTC*value)  )
 then
-$R.setResults(""+incen);
-System.out.println("Lead Owner Incentive: "+incen);
+$R.setResults(""+$D);
+System.out.println("Lead Owner Incentive: "+$D);
 end
 
 
 
+
+
+
+/*
 
 ///////////////////  Assistance Lead Owner  ///////////////
 rule "CalculateIncentiveAssistanceLeadOwner1"
