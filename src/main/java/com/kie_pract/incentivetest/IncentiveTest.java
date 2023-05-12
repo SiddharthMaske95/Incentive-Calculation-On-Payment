@@ -21,6 +21,8 @@ public class IncentiveTest implements java.io.Serializable {
 
 	private int CTC;
 
+	private java.lang.String results;
+
 	public IncentiveTest() {
 	}
 
@@ -88,10 +90,18 @@ public class IncentiveTest implements java.io.Serializable {
 		this.incen = incen;
 	}
 
+	public java.lang.String getResults() {
+		return this.results;
+	}
+
+	public void setResults(java.lang.String results) {
+		this.results = results;
+	}
+
 	public IncentiveTest(int incen, java.lang.String incentTypes,
 			java.lang.String incentiveEligible, int payment,
 			java.lang.String type_of, float value, java.lang.String based_on,
-			int CTC) {
+			int CTC, java.lang.String results) {
 		this.incen = incen;
 		this.incentTypes = incentTypes;
 		this.incentiveEligible = incentiveEligible;
@@ -100,6 +110,7 @@ public class IncentiveTest implements java.io.Serializable {
 		this.value = value;
 		this.based_on = based_on;
 		this.CTC = CTC;
+		this.results = results;
 	}
 
 }
