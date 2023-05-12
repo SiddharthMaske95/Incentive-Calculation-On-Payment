@@ -17,12 +17,15 @@ rule "CalculateIncentiveLeadOwner2"
 //ruleflow-group "Test"
 salience 3
 when
-$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
+$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC")   ,$H.equals("Yes"),$D:(payment*(value/100)))
 then
 $R.setIncen($D);
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
+
+
+/*
 ///////////////////  Assistance Lead Owner  ///////////////
 rule "CalculateIncentiveAssistanceLeadOwner1"
 //ruleflow-group "Test"
@@ -44,7 +47,7 @@ $R.setIncen($D);
 System.out.println("Assistance Lead Owner Incentive: "+$D);
 end
 
-/*
+
 ////////////////////  Contract Renewal ///////////////////
 rule "CalculateIncentiveContractRenewal"
 //ruleflow-group "Test"
@@ -56,7 +59,7 @@ $R.setIncen($D);
 System.out.println("Contract Renewal Incentive: "+$D);
 end
 
-*/
+
 
 
 rule "CalculateIncentiveNotEligible"
@@ -101,3 +104,6 @@ then
 $R.setIncen(0000.00);
 System.out.println("Not Eligible for Incentive");
 end
+
+
+*/
