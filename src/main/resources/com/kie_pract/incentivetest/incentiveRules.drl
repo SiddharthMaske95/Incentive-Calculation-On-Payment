@@ -15,6 +15,9 @@ $R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
+
+
+/*
 rule "CalculateIncentiveLeadOwner2"
 ruleflow-group "Test"
 salience 3
@@ -27,7 +30,7 @@ end
 
 
 
-/*
+
 ///////////////////  Assistance Lead Owner  ///////////////
 rule "CalculateIncentiveAssistanceLeadOwner1"
 //ruleflow-group "Test"
