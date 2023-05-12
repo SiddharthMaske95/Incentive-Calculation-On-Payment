@@ -84,29 +84,6 @@
               <step>IncentiveTest</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>based_on</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1|1</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|2</name>
-            <className>com.kie_pract.incentivetest.IncentiveTest</className>
-          </factIdentifier>
-          <className>java.lang.String</className>
-          <factAlias>IncentiveTest</factAlias>
-          <expressionAlias>based_on</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>114.0</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>IncentiveTest</step>
-            </ExpressionElement>
-            <ExpressionElement>
               <step>type_of</step>
             </ExpressionElement>
           </expressionElements>
@@ -198,6 +175,9 @@
             <ExpressionElement>
               <step>IncentiveTest</step>
             </ExpressionElement>
+            <ExpressionElement>
+              <step>incen</step>
+            </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
             <name>1|2</name>
@@ -207,10 +187,10 @@
             <name>1|2</name>
             <className>com.kie_pract.incentivetest.IncentiveTest</className>
           </factIdentifier>
-          <className>com.kie_pract.incentivetest.IncentiveTest</className>
+          <className>double</className>
           <factAlias>IncentiveTest</factAlias>
-          <expressionAlias>expression &lt;/&gt;</expressionAlias>
-          <factMappingValueType>EXPRESSION</factMappingValueType>
+          <expressionAlias>incen</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>114.0</columnWidth>
         </FactMapping>
       </factMappings>
@@ -238,26 +218,6 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">1</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.kie_pract.incentivetest.IncentiveTest</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|2</name>
-              <type>EXPECT</type>
-            </expressionIdentifier>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.kie_pract.incentivetest.IncentiveTest</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|1</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -325,6 +285,17 @@
             </expressionIdentifier>
             <rawValue class="string">500000</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|2</name>
+              <className>com.kie_pract.incentivetest.IncentiveTest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">0.0d</rawValue>
+          </FactMappingValue>
         </factMappingValues>
       </Scenario>
     </scesimData>
@@ -369,8 +340,9 @@
   </background>
   <settings>
     <type>RULE</type>
+    <ruleFlowGroup>Test</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
-    <stateless>false</stateless>
+    <stateless>true</stateless>
   </settings>
   <imports>
     <imports/>
