@@ -11,7 +11,7 @@ when
 
 $R:IncentiveTest( $D:incen  ,$Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments") ,$H.equals("Yes"),$D:(payment*value)  )
 the
-//$R.setResults(""+$D);
+$R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
