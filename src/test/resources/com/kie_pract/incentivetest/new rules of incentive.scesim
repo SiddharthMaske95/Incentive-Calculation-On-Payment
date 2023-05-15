@@ -130,7 +130,7 @@
               <step>IncentiveTest</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>CTC</step>
+              <step>payment</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -143,7 +143,7 @@
           </factIdentifier>
           <className>int</className>
           <factAlias>IncentiveTest</factAlias>
-          <expressionAlias>CTC</expressionAlias>
+          <expressionAlias>payment</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>114.0</columnWidth>
         </FactMapping>
@@ -228,7 +228,7 @@
               <name>1683885707132</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">Multiple Of CTC</rawValue>
+            <rawValue class="string">% Of Payments</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -272,7 +272,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">140140000</rawValue>
+            <rawValue class="string">69292916</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -294,7 +294,7 @@
               <name>1683885709681</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">20020000</rawValue>
+            <rawValue class="string">989898898</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
