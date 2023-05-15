@@ -141,7 +141,7 @@
             <name>1|2</name>
             <className>com.kie_pract.incentivetest.IncentiveTest</className>
           </factIdentifier>
-          <className>int</className>
+          <className>long</className>
           <factAlias>IncentiveTest</factAlias>
           <expressionAlias>payment</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
@@ -272,7 +272,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">-1660642306</rawValue>
+            <rawValue class="string">6929292286</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
