@@ -35,7 +35,7 @@ salience 3
 when
 //$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
 
-$R:IncentiveTest( $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("% Of Payments") , based_on.equals("No. of Accounts")  ,$H.equals("Yes"),$D:(value*(payment/100))  )
+$R:IncentiveTest( $Z:type_of,$W:CTC , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("% Of Payments") , based_on.equals("No. of Accounts")  ,$H.equals("Yes"),$D:(value*(payment/100))  )
 then
 $R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
