@@ -130,7 +130,7 @@
               <step>IncentiveTest</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>CTC</step>
+              <step>ctc</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -143,7 +143,7 @@
           </factIdentifier>
           <className>int</className>
           <factAlias>IncentiveTest</factAlias>
-          <expressionAlias>CTC</expressionAlias>
+          <expressionAlias>ctc</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>114.0</columnWidth>
         </FactMapping>
