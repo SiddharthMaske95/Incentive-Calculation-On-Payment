@@ -20,7 +20,7 @@ rule "CalculateIncentiveLeadOwner2"
 ruleflow-group "Test"
 salience 3
 when
-$R:IncentiveTest( $Z:type_of,$D:payment , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC") , based_on.equals("No. of Accounts")  ,$H.equals("Yes"),$D:(CTC*value)  )
+$R:IncentiveTest( $Z:type_of,$W:payment , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC") , based_on.equals("No. of Accounts")  ,$H.equals("Yes"),$D:(CTC*value)  )
 then
 $R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
