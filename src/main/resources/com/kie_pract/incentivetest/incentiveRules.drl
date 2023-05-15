@@ -4,7 +4,7 @@ import java.lang.Math.*;
 
 //////////////// Lead Owner /////////////////
 rule "CalculateIncentiveLeadOwner1"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 //$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
@@ -17,7 +17,7 @@ end
 
 
 rule "CalculateIncentiveLeadOwner2"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 $R:IncentiveTest( $Z:type_of,$W:payment , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of CTC") , based_on.equals("No. of Accounts")  ,$H.equals("Yes"),$D:(CTC*value)  )
@@ -30,7 +30,7 @@ end
 
 
 rule "CalculateIncentiveLeadOwner3"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 //$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
@@ -43,7 +43,7 @@ end
 
 
 rule "CalculateIncentiveLeadOwner4"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 //$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
