@@ -7,7 +7,7 @@ rule "CalculateIncentiveLeadOwner1"
 ruleflow-group "Test"
 salience 3
 when
-$R:IncentiveTest( trgt_rev>payment==true  ,$A:scheme_id ,based_on.equals("Multiple of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(ctc*value)  )
+$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("Multiple of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(ctc*value)  )
 then
 $R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
@@ -17,9 +17,9 @@ rule "CalculateIncentiveLeadOwner2"
 ruleflow-group "Test"
 salience 3
 when
-$R:IncentiveTest( trgt_rev>payment==false  ,$A:scheme_id ,based_on.equals("Multiple of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(ctc*value)  )
+$R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("Multiple of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(ctc*value)  )
 then
-$R.setResults("Target Rev. Failed");
+$R.setResults("Payment Failed");
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
