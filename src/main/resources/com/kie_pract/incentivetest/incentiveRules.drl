@@ -4,7 +4,7 @@ import java.lang.Math.*;
 
 //////////////// Lead Owner /////////////////
 rule "CalculateIncentiveLeadOwner1"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 $R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("Multiple of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(ctc*value)  )
@@ -14,7 +14,7 @@ System.out.println("Lead Owner Incentive: "+$D);
 end
 
 rule "CalculateIncentiveLeadOwner2"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 $R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("Multiple of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(ctc*value)  )
@@ -26,7 +26,7 @@ end
 
 
 rule "CalculateIncentiveLeadOwner3"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 $R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
@@ -36,7 +36,7 @@ System.out.println("Lead Owner Incentive: "+$D);
 end
 
 rule "CalculateIncentiveLeadOwner4"
-ruleflow-group "Test"
+//ruleflow-group "Test"
 salience 3
 when
 $R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
