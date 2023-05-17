@@ -4,7 +4,7 @@ import java.lang.Math.*;
 
 //////////////// Lead Owner /////////////////
 rule "CalculateIncentiveLeadOwner1"
-//ruleflow-group "Test"
+ruleflow-group "Test"
 salience 3
 when
 //$R:IncentiveTest(  $Z:type_of , $H:incentiveEligible  , $M:incentTypes,$M.equals("Primary"),$Z.equals("Multiple Of Payments")   ,$H.equals("Yes"),$D:(payment*(value/100)))
