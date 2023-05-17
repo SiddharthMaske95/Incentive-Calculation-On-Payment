@@ -22,6 +22,12 @@ public class IncentiveTest implements java.io.Serializable {
 
 	private long ctc;
 
+	private java.lang.String sales_type;
+
+	private java.lang.Long trgt_rev;
+
+	private int scheme_id;
+
 	public IncentiveTest() {
 	}
 
@@ -89,10 +95,35 @@ public class IncentiveTest implements java.io.Serializable {
 		this.payment = payment;
 	}
 
+	public java.lang.String getSales_type() {
+		return this.sales_type;
+	}
+
+	public void setSales_type(java.lang.String sales_type) {
+		this.sales_type = sales_type;
+	}
+
+	public java.lang.Long getTrgt_rev() {
+		return this.trgt_rev;
+	}
+
+	public void setTrgt_rev(java.lang.Long trgt_rev) {
+		this.trgt_rev = trgt_rev;
+	}
+
+	public int getScheme_id() {
+		return this.scheme_id;
+	}
+
+	public void setScheme_id(int scheme_id) {
+		this.scheme_id = scheme_id;
+	}
+
 	public IncentiveTest(java.lang.String incentTypes,
 			java.lang.String incentiveEligible, long payment,
 			java.lang.String type_of, int value, java.lang.String based_on,
-			java.lang.String results, long ctc) {
+			java.lang.String results, long ctc, java.lang.String sales_type,
+			java.lang.Long trgt_rev, int scheme_id) {
 		this.incentTypes = incentTypes;
 		this.incentiveEligible = incentiveEligible;
 		this.payment = payment;
@@ -101,6 +132,9 @@ public class IncentiveTest implements java.io.Serializable {
 		this.based_on = based_on;
 		this.results = results;
 		this.ctc = ctc;
+		this.sales_type = sales_type;
+		this.trgt_rev = trgt_rev;
+		this.scheme_id = scheme_id;
 	}
 
 }
