@@ -8,8 +8,6 @@ public class IncentiveTest implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String incentTypes;
-	private java.lang.String incentiveEligible;
 	private long payment;
 
 	private java.lang.String type_of;
@@ -29,22 +27,6 @@ public class IncentiveTest implements java.io.Serializable {
 	private int scheme_id;
 
 	public IncentiveTest() {
-	}
-
-	public java.lang.String getIncentTypes() {
-		return this.incentTypes;
-	}
-
-	public void setIncentTypes(java.lang.String incentTypes) {
-		this.incentTypes = incentTypes;
-	}
-
-	public java.lang.String getIncentiveEligible() {
-		return this.incentiveEligible;
-	}
-
-	public void setIncentiveEligible(java.lang.String incentiveEligible) {
-		this.incentiveEligible = incentiveEligible;
 	}
 
 	public java.lang.String getType_of() {
@@ -119,13 +101,9 @@ public class IncentiveTest implements java.io.Serializable {
 		this.scheme_id = scheme_id;
 	}
 
-	public IncentiveTest(java.lang.String incentTypes,
-			java.lang.String incentiveEligible, long payment,
-			java.lang.String type_of, int value, java.lang.String based_on,
-			java.lang.String results, long ctc, java.lang.String sales_type,
-			java.lang.Long trgt_rev, int scheme_id) {
-		this.incentTypes = incentTypes;
-		this.incentiveEligible = incentiveEligible;
+	public IncentiveTest(long payment, java.lang.String type_of, int value,
+			java.lang.String based_on, java.lang.String results, long ctc,
+			java.lang.String sales_type, java.lang.Long trgt_rev, int scheme_id) {
 		this.payment = payment;
 		this.type_of = type_of;
 		this.value = value;
