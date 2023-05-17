@@ -13,7 +13,7 @@ $R.setResults(""+$D);
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
-rule "CalculateIncentiveLeadOwner1"
+rule "CalculateIncentiveLeadOwner2"
 ruleflow-group "Test"
 salience 3
 when
