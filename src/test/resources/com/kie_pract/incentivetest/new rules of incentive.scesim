@@ -38,29 +38,6 @@
               <step>IncentiveTest</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>based_on</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1683893971144</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|2</name>
-            <className>com.kie_pract.incentivetest.IncentiveTest</className>
-          </factIdentifier>
-          <className>java.lang.String</className>
-          <factAlias>IncentiveTest</factAlias>
-          <expressionAlias>based_on</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>114.0</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>IncentiveTest</step>
-            </ExpressionElement>
-            <ExpressionElement>
               <step>sales_type</step>
             </ExpressionElement>
           </expressionElements>
@@ -76,30 +53,7 @@
           <factAlias>IncentiveTest</factAlias>
           <expressionAlias>sales_type</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>114.0</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>IncentiveTest</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>type_of</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1683885707132</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|2</name>
-            <className>com.kie_pract.incentivetest.IncentiveTest</className>
-          </factIdentifier>
-          <className>java.lang.String</className>
-          <factAlias>IncentiveTest</factAlias>
-          <expressionAlias>type_of</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>114.0</columnWidth>
+          <columnWidth>114.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -122,7 +76,7 @@
           <factAlias>IncentiveTest</factAlias>
           <expressionAlias>ctc</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>114.0</columnWidth>
+          <columnWidth>114.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -145,7 +99,7 @@
           <factAlias>IncentiveTest</factAlias>
           <expressionAlias>value</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>114.0</columnWidth>
+          <columnWidth>114.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -168,7 +122,7 @@
           <factAlias>IncentiveTest</factAlias>
           <expressionAlias>results</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>114.0</columnWidth>
+          <columnWidth>114.25</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -202,17 +156,6 @@
               <className>com.kie_pract.incentivetest.IncentiveTest</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1683885707132</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string"> CTC</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.kie_pract.incentivetest.IncentiveTest</className>
-            </factIdentifier>
-            <expressionIdentifier>
               <name>1683885713486</name>
               <type>GIVEN</type>
             </expressionIdentifier>
@@ -227,18 +170,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">234234234</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.kie_pract.incentivetest.IncentiveTest</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1683893971144</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">Multiple of CTC</rawValue>
+            <rawValue class="string">6929292286</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
