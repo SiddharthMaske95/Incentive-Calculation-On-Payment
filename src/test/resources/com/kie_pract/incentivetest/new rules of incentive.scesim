@@ -192,7 +192,7 @@
               <name>1683886038628</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">Primary</rawValue>
+            <rawValue class="string">Secondary</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
