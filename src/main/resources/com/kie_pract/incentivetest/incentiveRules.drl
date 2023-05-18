@@ -1,7 +1,7 @@
 package com.kie_pract.incentivetest;
 
 import java.lang.Math.*;
-/*
+
 //////////////// Lead Owner /////////////////
 rule "CalculateIncentiveLeadOwner1"
 //ruleflow-group "Test"
@@ -55,7 +55,6 @@ end
 
 
 
-*/
 
 ///// new Rule///
 rule "CalculateIncentiveLeadOwner5"
@@ -63,21 +62,11 @@ ruleflow-group "Test"
 salience 3
 when
 //$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
-$R:IncentiveTest( payment>trgt_rev==true  )
+$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("Multiple Of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
 then
-$R.setResults("_____NA");
-System.out.println("true condition "+$R);
-end
+$R.setResults("NA");
+System.out.println("Lead Owner Incentive: "+$D);
 
-rule "CalculateIncentiveLeadOwner6"
-ruleflow-group "Test"
-salience 3
-when
-//$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
-$R:IncentiveTest( payment>trgt_rev==false  )
-then
-$R.setResults("AN___");
-System.out.println("false condition "+$R);
 end
 
 
