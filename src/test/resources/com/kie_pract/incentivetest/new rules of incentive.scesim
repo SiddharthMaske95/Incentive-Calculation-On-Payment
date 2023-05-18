@@ -285,7 +285,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">null</rawValue>
+            <rawValue class="string">NA</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -351,7 +351,7 @@
               <name>1684301452417</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">900000</rawValue>
+            <rawValue class="string">9000000000</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
