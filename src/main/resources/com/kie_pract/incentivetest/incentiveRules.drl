@@ -62,9 +62,9 @@ rule "CalculateIncentiveLeadOwner5"
 salience 3
 when
 //$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
-$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("Multiple Of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
+$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("Multiple of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
 then
-$R.setResults("NA mul of ac");
+$R.setResults("NA");
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
@@ -74,9 +74,9 @@ rule "CalculateIncentiveLeadOwner6"
 salience 3
 when
 //$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
-$R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("Multiple Of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
+$R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("Multiple of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
 then
-$R.setResults("NA mul of ac");
+$R.setResults("NA");
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
@@ -85,9 +85,9 @@ rule "CalculateIncentiveLeadOwner7"
 salience 3
 when
 //$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
-$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("% Of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
+$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("% of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
 then
-$R.setResults("NAN %of ac");
+$R.setResults("NA");
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
@@ -96,9 +96,9 @@ rule "CalculateIncentiveLeadOwner8"
 salience 3
 when
 //$R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
-$R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("% Of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
+$R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("% of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
 then
-$R.setResults("NAN % of ac");
+$R.setResults("NA");
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
