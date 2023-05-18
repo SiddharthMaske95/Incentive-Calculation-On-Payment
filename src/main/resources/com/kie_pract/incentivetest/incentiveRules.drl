@@ -66,6 +66,7 @@ when
 $R:IncentiveTest( payment>trgt_rev==true  )
 then
 $R.setResults("_____NA");
+System.out.println("true condition "+$R);
 end
 
 rule "CalculateIncentiveLeadOwner6"
@@ -76,6 +77,7 @@ when
 $R:IncentiveTest( payment>trgt_rev==false  )
 then
 $R.setResults("AN___");
+System.out.println("false condition "+$R);
 end
 
 
