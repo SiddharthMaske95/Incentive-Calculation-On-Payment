@@ -62,6 +62,7 @@ $R:IncentiveTest( payment>trgt_rev==true  ,$A:scheme_id ,based_on.equals("No. of
 then
 $R.setResults("NA");
 System.out.println("Lead Owner Incentive: "+$D);
+System.out.println("Lead  "+(payment>trgt_rev==true ));
 end
 
 
