@@ -318,7 +318,7 @@
               <name>1684300802215</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">% of CTC</rawValue>
+            <rawValue class="string">No. of Accounts</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -329,7 +329,7 @@
               <name>1684300832697</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">CTC</rawValue>
+            <rawValue class="string">% of Accounts</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
