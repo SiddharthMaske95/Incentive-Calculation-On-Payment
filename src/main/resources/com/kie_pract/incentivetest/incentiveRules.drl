@@ -1,7 +1,7 @@
 package com.kie_pract.incentivetest;
 
 import java.lang.Math.*;
-
+/*
 //////////////// Lead Owner /////////////////
 rule "CalculateIncentiveLeadOwner1"
 //ruleflow-group "Test"
@@ -52,6 +52,10 @@ end
 
 
 
+
+
+
+*/
 
 ///// new Rule///
 rule "CalculateIncentiveLeadOwner5"
