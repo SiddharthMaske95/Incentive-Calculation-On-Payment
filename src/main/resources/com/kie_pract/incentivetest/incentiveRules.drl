@@ -69,7 +69,7 @@ ruleflow-group "Test"
 salience 3
 when
 //$R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("% of CTC") ,type_of.equals("CTC")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
-$R:IncentiveTest( $D:payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("% of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
+$R:IncentiveTest( payment>trgt_rev==false  ,$A:scheme_id ,based_on.equals("No. of Accounts") ,type_of.equals("% of Accounts")  ,sales_type.equals("Primary")|| sales_type.equals("Secondary")   ,$D:(value*(ctc/100))  )
 then
 $R.setResults("NA");
 System.out.println(" "+$D);
