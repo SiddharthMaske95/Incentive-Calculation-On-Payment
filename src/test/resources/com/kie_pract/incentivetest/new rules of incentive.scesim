@@ -285,7 +285,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">NA</rawValue>
+            <rawValue class="string">NAN</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -329,7 +329,7 @@
               <name>1684300832697</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">Multiple Of Accounts</rawValue>
+            <rawValue class="string">% Of Accounts</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -351,7 +351,7 @@
               <name>1684301452417</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">9000000000989898</rawValue>
+            <rawValue class="string">9008</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -362,7 +362,7 @@
               <name>1684301465757</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">900000089999</rawValue>
+            <rawValue class="string">900000</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
