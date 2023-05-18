@@ -50,7 +50,15 @@ $R.setResults("Payment Failed");
 System.out.println("Lead Owner Incentive: "+$D);
 end
 
-///////////////  AC
+
+
+
+
+
+
+
+/*
+///////////////  AC   error
 
 rule "CalculateIncentiveLeadOwner5"
 ruleflow-group "Test"
@@ -76,7 +84,7 @@ System.out.println(" "+$D);
 System.out.println("Lead Owner Incentive: "+$D);
 System.out.println("COndition "+ (payment>trgt_rev==true));
 end
-
+*/
 
 
 
