@@ -351,7 +351,7 @@
               <name>1684301452417</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">9000000000</rawValue>
+            <rawValue class="string">9000000000989898</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -362,7 +362,7 @@
               <name>1684301465757</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">9000000</rawValue>
+            <rawValue class="string">900000089999</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
